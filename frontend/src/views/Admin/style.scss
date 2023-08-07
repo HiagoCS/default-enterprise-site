@@ -1,0 +1,86 @@
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vh 5vw;
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.15), 0 2px 2px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.15), 0 8px 8px rgba(0,0,0,0.15);
+        background-color: #0E3854 !important;
+        height: auto;
+/*         .header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            span{
+                display: flex;
+                color:white;
+                padding-right: 4vw;
+                transition: 0.2s ease;
+                i{
+                    position: relative;
+                    left: 1vw;
+                }
+                
+            }
+            .user-title.active{
+                padding-right: 20vw;
+                i{
+                    position: relative;
+                    left: 12vw;
+                }
+            }
+        } */
+        .content{
+            display: flex;
+            justify-content: space-between;
+            //justify-content: space-between;
+            //align-items: center;
+            /* topo | direita | inferior | esquerda */
+            margin: 0 0 2vh 0;
+            height: auto;
+            .left-menu{
+                display: flex;
+                flex-direction: column;
+                
+                //background-color: white;
+                width: 20vw;
+                span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: "Quicksand-Bold";
+                    background-color: white;
+                    margin: 1vh 1vw 1vh 1vw;
+                    //height: 20%;
+                    height: 5vh;
+                    border-radius: 5rem;
+                    transition: ease 0.4s;
+                    &:hover{
+        
+                        height: 7vh;
+                    }
+                }
+                .title{
+                    font-family: "Quicksand-Bold";
+                    background-color: white;
+                    margin: 1vh 1vw 1vh 1vw;
+                    padding: 0 0 1vh 0;
+                    border-radius: 5px;
+                    img{
+                        width: 150px;
+                    }
+                }
+            }
+            .right-content{
+                background-color: white;
+                width: 80vw;
+                height: 100;
+                margin: 1vh 1vw 1vh 1vw;
+            }
+        }
+    }
+}

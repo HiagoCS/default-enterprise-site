@@ -1,0 +1,91 @@
+.form{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    
+    //align-items: flex-start !important;
+    padding: 20vh 0vw 20vh 0vw;
+    height: 10vh;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    div.field-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1vh 1vw 1vh 0vw;
+        transition: 0.2s ease;
+        &.active{
+            margin: 2vh 1vw 1.2vh 0.1vw;
+        }
+        .multifield{
+            margin: 0;
+            transition: 0.2s ease;
+            &.active{
+                margin: 0 0 1.2vh 0;
+            }
+        }
+        input{
+            height: 5vh;
+            border-radius: 5px;
+            border: 2px solid #808080;
+            transition: 0.2s ease;
+            font-family: "Quicksand-Semibold" !important;
+        }
+        label{
+            font-family: "Quicksand-Bold" !important;
+            margin: 1vh 1vw 1vh 1vw;
+            position: absolute;
+            transition: 0.2s ease;
+            &.active{
+                transform: translate(0.2vw, -3.5vh);
+                background-color: #F0F0F0;
+            }
+        }
+    }
+}
+/* .form{
+    display: flex;
+    width: 100%;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1vh 1vw 2vh 1vw;
+        width: 100%;
+        transition: 0.2s ease;
+        &.active{
+            margin: 0 0 5vh 0;
+        }
+        .multifield{
+            width: 100%;
+            margin: 0;
+            &.active{
+                margin: 0 0 3vh 0;
+            }
+        }
+        label{
+            font-family: "Quicksand-Bold" !important;
+            margin: 1vh 1vw 1vh 1vw;
+            position: absolute;
+            transition: 0.2s ease;
+            &.active{
+                transform: translate(0, 5px);
+                background-color: #F0F0F0;
+            }
+        }
+        input{
+            height: 5vh;
+            width: 100%;
+            border-radius: 5px;
+            border: 2px solid #808080;
+            transition: 0.2s ease;
+            &.active{
+                transform: translate(2px, 23px);   
+            }
+        }
+    }
+} */
